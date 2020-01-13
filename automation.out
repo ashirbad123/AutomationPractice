@@ -1,0 +1,72 @@
+2019-12-15 23:45:22 INFO  TestBase:46 - Chrome Driver object is created:
+2019-12-15 23:45:23 INFO  TestBase:48 - Driver maximization done:
+2019-12-15 23:45:23 INFO  TestBase:50 - Timeout is set to 10 secs:
+2019-12-15 23:45:28 INFO  TestBase:52 - Url is launched
+2019-12-15 23:45:42 INFO  TestBase:46 - Chrome Driver object is created:
+2019-12-15 23:45:44 INFO  TestBase:48 - Driver maximization done:
+2019-12-15 23:45:44 INFO  TestBase:50 - Timeout is set to 10 secs:
+2019-12-15 23:45:49 INFO  TestBase:52 - Url is launched
+2019-12-15 23:47:55 INFO  TestBase:46 - Chrome Driver object is created:
+2019-12-15 23:47:56 INFO  TestBase:48 - Driver maximization done:
+2019-12-15 23:47:56 INFO  TestBase:50 - Timeout is set to 10 secs:
+2019-12-15 23:48:01 INFO  TestBase:52 - Url is launched
+2019-12-15 23:48:16 INFO  TestBase:46 - Chrome Driver object is created:
+2019-12-15 23:48:17 INFO  TestBase:48 - Driver maximization done:
+2019-12-15 23:48:17 INFO  TestBase:50 - Timeout is set to 10 secs:
+2019-12-15 23:48:22 INFO  TestBase:52 - Url is launched
+2019-12-19 19:10:58 INFO  TestBase:46 - Chrome Driver object is created:
+2019-12-19 19:11:00 INFO  TestBase:48 - Driver maximization done:
+2019-12-19 19:11:00 INFO  TestBase:50 - Timeout is set to 10 secs:
+2019-12-19 19:11:05 INFO  TestBase:52 - Url is launched
+2019-12-19 19:11:19 INFO  TestBase:46 - Chrome Driver object is created:
+2019-12-19 19:11:20 INFO  TestBase:48 - Driver maximization done:
+2019-12-19 19:11:20 INFO  TestBase:50 - Timeout is set to 10 secs:
+2019-12-19 19:11:25 INFO  TestBase:52 - Url is launched
+2020-01-12 20:20:46 INFO  TestBase:46 - Chrome Driver object is created:
+2020-01-12 20:20:47 INFO  TestBase:48 - Driver maximization done:
+2020-01-12 20:20:47 INFO  TestBase:50 - Timeout is set to 10 secs:
+2020-01-12 20:20:53 INFO  TestBase:52 - Url is launched
+2020-01-12 20:21:08 INFO  TestBase:46 - Chrome Driver object is created:
+2020-01-12 20:21:10 INFO  TestBase:48 - Driver maximization done:
+2020-01-12 20:21:10 INFO  TestBase:50 - Timeout is set to 10 secs:
+2020-01-12 20:21:11 INFO  TestBase:52 - Url is launched
+2020-01-12 20:24:43 INFO  TestBase:46 - Chrome Driver object is created:
+2020-01-12 20:24:44 INFO  TestBase:48 - Driver maximization done:
+2020-01-12 20:24:44 INFO  TestBase:50 - Timeout is set to 10 secs:
+2020-01-12 20:24:51 INFO  TestBase:52 - Url is launched
+2020-01-12 20:24:54 INFO  TestBase:46 - Chrome Driver object is created:
+2020-01-12 20:24:55 INFO  TestBase:48 - Driver maximization done:
+2020-01-12 20:24:55 INFO  TestBase:50 - Timeout is set to 10 secs:
+2020-01-12 20:25:02 INFO  TestBase:52 - Url is launched
+2020-01-12 20:25:38 INFO  TestBase:47 - Chrome Driver object is created:
+2020-01-12 20:25:39 INFO  TestBase:49 - Driver maximization done:
+2020-01-12 20:25:39 INFO  TestBase:51 - Timeout is set to 10 secs:
+2020-01-12 20:25:46 INFO  TestBase:53 - Url is launched
+2020-01-12 20:28:17 INFO  TestBase:47 - Chrome Driver object is created:
+2020-01-12 20:28:18 INFO  TestBase:49 - Driver maximization done:
+2020-01-12 20:28:18 INFO  TestBase:51 - Timeout is set to 10 secs:
+2020-01-12 20:28:25 INFO  TestBase:53 - Url is launched
+2020-01-12 20:30:28 INFO  TestBase:47 - Chrome Driver object is created:
+2020-01-12 20:30:30 INFO  TestBase:49 - Driver maximization done:
+2020-01-12 20:30:30 INFO  TestBase:51 - Timeout is set to 10 secs:
+2020-01-12 20:30:37 INFO  TestBase:53 - Url is launched
+2020-01-12 20:32:31 INFO  TestBase:47 - Chrome Driver object is created:
+2020-01-12 20:32:32 INFO  TestBase:49 - Driver maximization done:
+2020-01-12 20:32:32 INFO  TestBase:51 - Timeout is set to 10 secs:
+2020-01-12 20:32:39 INFO  TestBase:53 - Url is launched
+2020-01-12 20:34:04 INFO  TestBase:47 - Chrome Driver object is created:
+2020-01-12 20:34:05 INFO  TestBase:49 - Driver maximization done:
+2020-01-12 20:34:05 INFO  TestBase:51 - Timeout is set to 10 secs:
+2020-01-12 20:34:11 INFO  TestBase:53 - Url is launched
+2020-01-12 20:37:32 INFO  TestBase:47 - Chrome Driver object is created:
+2020-01-12 20:37:33 INFO  TestBase:49 - Driver maximization done:
+2020-01-12 20:37:33 INFO  TestBase:51 - Timeout is set to 10 secs:
+2020-01-12 20:37:37 INFO  TestBase:53 - Url is launched
+2020-01-12 20:42:20 INFO  TestBase:47 - Chrome Driver object is created:
+2020-01-12 20:42:21 INFO  TestBase:49 - Driver maximization done:
+2020-01-12 20:42:21 INFO  TestBase:51 - Timeout is set to 10 secs:
+2020-01-12 20:42:27 INFO  TestBase:53 - Url is launched
+2020-01-12 22:43:06 INFO  TestBase:47 - Chrome Driver object is created:
+2020-01-12 22:43:07 INFO  TestBase:49 - Driver maximization done:
+2020-01-12 22:43:07 INFO  TestBase:51 - Timeout is set to 10 secs:
+2020-01-12 22:43:08 INFO  TestBase:53 - Url is launched

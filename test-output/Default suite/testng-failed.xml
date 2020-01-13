@@ -6,9 +6,11 @@
       <class name="com.AutomationPractice.EndToEndFlow">
         <methods>
           <include name="workflow"/>
+          <include name="tearDown"/>
           <include name="signIn"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
           <include name="afterTest"/>
-          <include name="preRequisites"/>
         </methods>
       </class> <!-- com.AutomationPractice.EndToEndFlow -->
     </classes>

@@ -1,30 +1,16 @@
 package com.AutomationPractice;
 
 
-	import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import testBase.TestBase;
 
-	import javax.xml.xpath.XPath;
+	public class EndToEndFlow extends TestBase {
 
-	import org.openqa.selenium.By;
-import org.openqa.selenium.Platform;
-import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.chrome.ChromeDriver;
-	import org.openqa.selenium.chrome.ChromeOptions;
-	import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterTest;
-	import org.testng.annotations.BeforeTest;
-	import org.testng.annotations.Test;
-
-import junit.framework.Assert;
-
-	public class EndToEndFlow {
-
-	WebDriver driver;
-	@BeforeTest
+	//public WebDriver driver;
+	/*@BeforeTest
     public void setUp() {
 	System.setProperty("webdriver.chrome.driver","D:\\Eclipse\\Workspace\\AutomationPractice\\DriverExecutables\\chromedriver.exe");	
 	driver=new ChromeDriver();		
@@ -32,24 +18,19 @@ import junit.framework.Assert;
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.get("http://automationpractice.com/index.php");
-	}
+	}*/
 
 	//This function is to perform login function.
 	@Test(priority = 1)
 	public void signIn() throws InterruptedException{
 	driver.findElement(By.xpath("//*[contains(text(),'Sign in')]")).click();
 	Thread.sleep(3000);
-	driver.findElement(By.id("email")).sendKeys("ashirbad@gmail.com");
+	driver.findElement(By.id("email")).sendKeys(username);
 	Thread.sleep(1500);
-	driver.findElement(By.id("passwd")).sendKeys("ashirbad@gmail.com");
+	driver.findElement(By.id("passwd")).sendKeys(password);
 	Thread.sleep(1500);
 	driver.findElement(By.xpath("//*[@id='SubmitLogin']")).click();
 	Thread.sleep(1500);
-	}
-
-	//Click on T-Shirt, add the t-shirt to cart and verify the "product successfully added to shopping cart message".
-	@Test(priority = 2)
-	public void workflow() throws InterruptedException{
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("//*[@id='block_top_menu']/ul/li[3]")).click();
 	Thread.sleep(2000);
@@ -69,12 +50,7 @@ import junit.framework.Assert;
 
 	}
 
-	@AfterTest
-	public void afterTest() throws InterruptedException{
-
-	Thread.sleep(3000);
-	//driver.close();
-	}
+	
 
 
 
