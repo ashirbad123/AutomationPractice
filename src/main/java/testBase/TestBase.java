@@ -16,10 +16,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+import org.testng.asserts.SoftAssert;
 
 import utilities.ReadConfigData;
 
@@ -27,6 +27,7 @@ import utilities.ReadConfigData;
 
 public class TestBase {
 	
+	public SoftAssert softassert = new SoftAssert();
 	public WebDriver driver;
 	public static Logger log;
 	ReadConfigData ref= new ReadConfigData();
@@ -34,8 +35,9 @@ public class TestBase {
 	public String username=ref.getUsername();
 	public String password=ref.getPassword();
 	
+	
 	@Parameters("browser")
-	@BeforeTest
+	@BeforeClass
 	public void setUp(String br) {
 				
 		log=Logger.getLogger(TestBase.class);
@@ -78,26 +80,29 @@ public class TestBase {
 		}
 	}
 	
-/*	
-	@AfterMethod
+	
+	@AfterClass
 	public void tearDown() {
 		driver.quit();
 	}
-	*/
 	
-	public void captureScreen(WebDriver driver, String tname)  {
+	
+	public static void captureScreen(WebDriver driver, String tname)  {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		SimpleDateFormat sdf=new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-		Calendar cal= Calendar.getInstance();
-		File target = new File(System.getProperty("user.dir") + "/Screenshots/" + tname /*+sdf.format(cal.getTime())+*/ + ".png");
+		/*SimpleDateFormat sdf=new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+		Calendar cal= Calendar.getInstance();*/
+		File target = new File(System.getProperty("user.dir") + "/Screenshots/" + tname + ".png");
 		try {
 		FileUtils.copyFile(source, target);
+		System.out.println("Screenshot taken");
 		}
 		catch(IOException io) {
 		io.printStackTrace();	
 		}
-		System.out.println("Screenshot taken");
+		
+	
+		
 	}
 	
 	    //from the Apache Commons Lang3.

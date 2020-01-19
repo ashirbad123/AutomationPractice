@@ -9,6 +9,7 @@
     <classes>
       <class name="com.AutomationPractice.EndToEndFlow">
         <methods>
+          <include name="tearDown"/>
           <include name="signIn"/>
           <include name="setUp"/>
         </methods>

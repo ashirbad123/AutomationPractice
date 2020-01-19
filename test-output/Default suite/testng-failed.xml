@@ -5,12 +5,8 @@
     <classes>
       <class name="com.AutomationPractice.EndToEndFlow">
         <methods>
-          <include name="workflow"/>
-          <include name="tearDown"/>
           <include name="signIn"/>
           <include name="setUp"/>
-          <include name="setUp"/>
-          <include name="afterTest"/>
         </methods>
       </class> <!-- com.AutomationPractice.EndToEndFlow -->
     </classes>

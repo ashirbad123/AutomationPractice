@@ -24,7 +24,7 @@ public class ReportClass extends TestListenerAdapter
 		
 	public void onStart(ITestContext testContext)
 	{
-		String timeStamp = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss").format(new Date());//time stamp
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
 		String repName="Test-Report-"+timeStamp+".html";
 		
 		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/Report/"+repName);//specify location of the report
@@ -40,7 +40,7 @@ public class ReportClass extends TestListenerAdapter
 		htmlReporter.config().setDocumentTitle("Automation Testing Report"); // Tile of report
 		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP); //location of the chart
-		htmlReporter.config().setTheme(Theme.STANDARD);
+		htmlReporter.config().setTheme(Theme.DARK);
 	}
 	
 	public void onTestSuccess(ITestResult tr)
@@ -51,7 +51,7 @@ public class ReportClass extends TestListenerAdapter
 	
 	public void onTestFailure(ITestResult tr)
 	{
-		logger=extent.createTest(tr.getName()); // create new entry in th report
+		logger=extent.createTest(tr.getName()); // create new entry in the report
 		logger.log(Status.FAIL,MarkupHelper.createLabel(tr.getName(),ExtentColor.RED)); // send the passed information to the report with GREEN color highlighted
 		
 		String screenshotPath=System.getProperty("user.dir")+"\\Screenshots\\"+tr.getName()+".png";
@@ -76,6 +76,7 @@ public class ReportClass extends TestListenerAdapter
 		logger=extent.createTest(tr.getName()); // create new entry in th report
 		logger.log(Status.SKIP,MarkupHelper.createLabel(tr.getName(),ExtentColor.ORANGE));
 	}
+	
 	
 	public void onFinish(ITestContext testContext)
 	{
