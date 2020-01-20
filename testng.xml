@@ -4,12 +4,19 @@
  <listeners>
    <listener class-name="utilities.ReportClass"/>
  </listeners>
-  <test name="Test">
   
-  <parameter name="browser" value="chrome"/>
-  
+  <test name="Test1">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.AutomationPractice.EndToEndFlow"/>
     </classes>
-  </test> <!-- Test -->
+    </test> <!-- Test -->
+    
+   <test name="JenkinsTest">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.AutomationPractice.JenkinsTest"/>
+    </classes>   
+   </test> <!-- Test -->
+   
 </suite> <!-- Suite -->

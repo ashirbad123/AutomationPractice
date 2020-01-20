@@ -26,17 +26,32 @@ public class ReadConfigData {
 	}
 	
 	public String getApplicationURL() {
-		return prop.getProperty("url");
+		////This is to read the data from the properties file
+		//return prop.getProperty("url");
+		
+		//To read the application url from the jenkins
+		System.out.println("Application value read from jenkins is:-"+System.getProperty("url"));
+		return System.getProperty("url");
 	}
+	
 	
 
 	public String getUsername() {
-		return prop.getProperty("username");
+		//This is to read the data from the properties file
+		//return prop.getProperty("username");
+		
+		//To read data from the jenkins
+		System.out.println("Username value read from jenkins is:-"+System.getProperty("username"));
+		return System.getProperty("username");
 	}
 
 
 	public String getPassword() {
-		return prop.getProperty("password");
+		//This is to read the data from the properties file
+		//return prop.getProperty("password");
+		//To read the data from jenkins
+		System.out.println("Password value read from jenkins is:-"+System.getProperty("password"));
+		return System.getProperty("password");
 	}
 
 
